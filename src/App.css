@@ -1,0 +1,337 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../HomeHeaderSmall.png);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.smallNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.smallNav i{
+  color: white;
+  font-size: 2rem;
+}
+
+.smallNav button{
+  background-color: #E86100;
+  border: 1px solid #E86100;
+  padding: 2% 1%;
+  color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+}
+
+.bigNav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 0px;
+  text-align: center;
+}
+
+.bigNav ul{
+  display: flex;
+  margin-right: 10%;
+}
+
+.bigNav div{
+  display: flex;
+  justify-content: center;
+}
+
+.bigNav ul li{
+  color: #f5f5f5;
+  list-style-type: none;
+  padding: 5%;
+}
+
+.bigNav ul li a{
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.signup, .login{
+  width: 10vw;
+  padding: 3% 0%;
+  border: 1px solid #E86100;
+  border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+}
+
+.login{
+  background-color: transparent;
+  margin-right: 25%;
+  color: #E86100;
+}
+
+.login:hover{
+  background-color: #E86100;
+  color: #f5f5f5;
+}
+
+.signup{
+  background-color: #E86100;
+}
+
+.signup a{
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.signup:hover{
+  background-color: #4F2100;
+  border: 1px solid #4F2100;
+}
+
+.toggledNavBar{
+  height: 100vh;
+  width: 80%;
+  background-color: #f5f5f5;
+  padding: 5%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  z-index: 1000;
+  position: absolute;
+}
+
+.toggledNavBar i{
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.toggledNavBar ul{
+  list-style-type: none;
+}
+
+.toggledNavBar ul li{
+  padding: 5% 0%;
+}
+
+.toggledNavBar ul li a{
+  color: #4F2100;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.toggledNavBar button a{
+  text-decoration: none;
+}
+
+.login-toggled, .signup-toggled{
+  padding: 2% 5%;
+  font-weight: 700;
+  border-radius: 0.25em;
+  border: 1px solid #E86100;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+}
+
+.login-toggled{
+  background-color: transparent;
+  margin-right: 10%;
+}
+
+.signup-toggled{
+  background-color: #E86100;
+  margin-right: 10%;
+  color: #f5f5f5;
+}
+
+.signup-toggled a{
+  color: #f5f5f5;
+}
+
+h1{
+  font-family: 'Courgette', cursive;
+  font-size: 3.5rem;
+  margin-top: 5%;
+  font-weight: 500;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.header-talk{
+  font-size: 1.1rem;
+  color: #f5f5f5;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  line-height: 150%;
+  margin-top: 42px;
+  margin-bottom: 80px;
+}
+
+.inputField{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin: 0 5%;
+  padding: 5px;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+
+.inputFieldRight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3%;
+  border-right: 1px dotted #E86100;
+}
+
+.inputField i{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4F2100;
+  margin-top: 1%;
+}
+
+.locate{
+  margin: 0 2%;
+  font-weight: 400;
+}
+
+.inputField input{
+  border: 0px;
+  background-color: #f2f2f2;
+  width: 300px;
+  padding: 2%;
+}
+
+.inputField input::placeholder{
+  color: #4F2100;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.searchIcon{
+  margin-left: 2%;
+}
+
+@media screen and (min-width:992px){
+
+  .Header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../HomeHeader.png);
+    height: 55vh;
+  }
+  h1{
+    font-size: 7rem;
+  }
+  .header-talk{
+    width: 45%;
+    line-height: 120%;
+  }
+
+  .inputField{
+    margin: 0 20%;
+    justify-content: space-between;
+  }
+
+  .inputFieldRight{
+    justify-content: flex-start;
+  }
+
+  .inputField input{
+    justify-self: flex-start;
+    width: 100%;
+  }
+}
+
+.HomeResturants{
+  padding: 5%;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 2%;
+  color: #4F2100;
+}
+
+.bar{
+  background-color: #E86100;
+  height: 4px;
+  width: 100px;
+  border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+}
+
+.resturant-slider{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-top: 5%;
+}
+
+.resturant-item{
+  /* background-color: aqua; */
+  width: 150px;
+  text-align: center;
+  flex: 0 0 auto;
+  margin: 0 5% 0 0;
+}
+
+.resturant-img{
+  padding: 5% 3% 2% 5%;
+  background-color: #f2f2f2;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  box-shadow: 0px 5px 5px #cec9c9;
+  margin-bottom: 5%;
+}
+
+.resturant-item img{
+  width: 100%;
+}
+
+.resturant-item h3{
+  font-family: 'Courgette', cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4F2100;
+}
