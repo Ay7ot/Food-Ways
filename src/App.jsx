@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './Components/Index/Header/Header'
 import HomeResturants from './Components/Index/Resturants/HomeResturants'
-
+import Customers from './Components/Index/Customers/Customers'
 
 function App() {
   const [navToggle, setNavToggle] = useState(false)
@@ -19,7 +19,10 @@ function App() {
       <div className='HomeResturants'>
         <h2>Resturants near you</h2>
         <div className='bar'></div>
-        <HomeResturants />
+        <HomeResturants/>
+      </div>
+      <div className='customers'>
+        <Customers />
       </div>
    </>
   )

@@ -17,7 +17,8 @@ button{
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../HomeHeaderSmall.png);
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  /* height: 60vh; */
+  padding-bottom: 10%;
 }
 
 .smallNav{
@@ -185,14 +186,14 @@ h1{
 }
 
 .header-talk{
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #f5f5f5;
   text-align: center;
-  width: 50%;
+  width: 60%;
   margin: auto;
   line-height: 150%;
   margin-top: 42px;
-  margin-bottom: 80px;
+  margin-bottom: 7%;
 }
 
 .inputField{
@@ -249,10 +250,11 @@ h1{
 
   .Header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../HomeHeader.png);
-    height: 55vh;
+    padding-bottom: 5%;
   }
   h1{
     font-size: 7rem;
+    margin-top: 2%;
   }
   .header-talk{
     width: 45%;
@@ -262,6 +264,7 @@ h1{
   .inputField{
     margin: 0 20%;
     justify-content: space-between;
+    padding: 0% 2%;
   }
 
   .inputFieldRight{
@@ -271,18 +274,36 @@ h1{
   .inputField input{
     justify-self: flex-start;
     width: 100%;
+
+  }
+}
+
+@media screen and (min-width:1200px){
+  .header-talk{
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    line-height: 150%;
+    margin-top: 42px;
+    margin-bottom: 40px;
   }
 }
 
 .HomeResturants{
   padding: 5%;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h2{
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
-  padding: 0 2%;
+  padding: 0 0 1% 2%;
   color: #4F2100;
 }
 
@@ -298,11 +319,11 @@ h2{
 }
 
 .resturant-slider{
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
   margin-top: 5%;
+}
+
+.slick-arrow{
+  visibility: hidden;
 }
 
 .resturant-item{
@@ -311,6 +332,25 @@ h2{
   text-align: center;
   flex: 0 0 auto;
   margin: 0 5% 0 0;
+}
+
+.slick-slide > div{
+  margin: 0 10px;
+}
+
+.slick-list{
+  margin: 0 -10px;
+}
+
+.slick-dots li button::before {
+  font-size: 1rem !important;
+  color: #E86100 !important;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #4F2100 !important;
+  opacity: 1 !important;
 }
 
 .resturant-img{
@@ -334,4 +374,14 @@ h2{
   font-size: 1rem;
   font-weight: 400;
   color: #4F2100;
+}
+
+.resturant-item p{
+  margin-top: 5%;
+}
+
+@media screen and (min-width:992px){
+  .resturant-item h3{
+    font-size: 1.2rem;
+  }
 }
