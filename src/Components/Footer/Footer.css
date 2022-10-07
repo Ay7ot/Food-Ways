@@ -1,0 +1,100 @@
+.Footer{
+background-color: #0F0600;
+}
+
+.Footer h2{
+text-align: center;
+font-family: "courgette", cursive;
+font-size: 1.5rem;
+padding-top: 2em;
+color: #E88A46;
+letter-spacing: 1px;
+}
+
+.footer-items{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2em;
+color: #cec9c9;
+padding: 1em;
+}
+
+.item-for-footer h3{
+font-size: 1.2rem;
+font-weight: 400;
+color: #E86100;
+font-family: "courgette", cursive;
+}
+
+.item-for-footer ul{
+list-style-type: none;
+margin-top: 1em;
+}
+
+.item-for-footer ul li{
+padding-bottom: 0.5em;
+font-size: 0.9rem;
+}
+
+.footer-icons{
+display: flex;
+justify-content: center;
+padding: 5% 0% 10%;
+}
+
+.footer-icons div{
+background-color: #cec9c9;
+border: 50%;
+margin: 1%;
+display: flex;
+padding: 1%;
+font-size: 1.2rem;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+color: #E86100;
+}
+
+@media screen and (min-width:992px){
+.Footer{
+    background-image: linear-gradient(rgba(15, 6, 0, 0.95),rgba(15, 6, 0, 0.95)), url(../FooterImg.png);
+    background-position: center;
+    background-size: cover;
+}
+.Footer h2{
+    font-size: 3rem;
+    padding-top: 1em;
+    color: #E86100;
+}
+.footer-items{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3% 10%;
+}
+
+.item-for-footer h3{
+    font-size: 1.3rem;
+}
+
+.item-for-footer ul li{
+    padding-bottom: 1em;
+    font-size: 1rem;
+}
+
+.footer-icons{
+    padding: 5% 0%;
+}
+}
+
+@media screen and (min-width:1200px){
+.footer-items{
+    padding: 3% 15%;
+}
+.footer-icons{
+    padding: 1% 0%;
+}
+.item-for-footer{
+    text-align: center;
+}
+}
