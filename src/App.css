@@ -28,13 +28,35 @@ button{
   justify-content: space-between;
   padding: 5%;
 }
+.smallNav2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+@media screen and (min-width:600px){
+  .smallNav2{
+    padding: 2% 5%;
+  }
+}
 
 .smallNav i{
   color: white;
   font-size: 2rem;
 }
 
-.smallNav button{
+.smallNav2 i{
+  color: #4F2100;
+  font-size: 2rem;
+}
+
+.smallNav2 h2{
+  font-family: "courgette", cursive;
+  font-weight: 500;
+}
+
+.smallNav button, .smallNav2 button{
   background-color: #E86100;
   border: 1px solid #E86100;
   padding: 2% 1%;
@@ -56,7 +78,27 @@ button{
   text-align: center;
 }
 
+.bigNav2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em 10%;
+  text-align: center;
+  background-color: #0F0600;
+}
+
+@media screen and (min-width:1200px){
+  .bigNav2{
+    padding: 1% 15%;
+  }
+}
+
 .bigNav ul{
+  display: flex;
+  margin-right: 10%;
+}
+
+.bigNav2 ul{
   display: flex;
   margin-right: 10%;
 }
@@ -66,13 +108,38 @@ button{
   justify-content: center;
 }
 
+.bigNav2 p {
+  font-size: 1.7rem;
+  font-family: "courgette", cursive;
+  color: #E88A46;
+  text-decoration: none;
+}
+
+.bigNav2 div{
+  display: flex;
+  justify-content: center;
+}
+
 .bigNav ul li{
   color: #f5f5f5;
   list-style-type: none;
-  padding: 5%;
+  padding: 3.5%;
+  font-size: 1.1em;
+}
+
+.bigNav2 ul li{
+  color: #f5f5f5;
+  list-style-type: none;
+  padding: 3.5%;
+  font-size: 1.1em;
 }
 
 .bigNav ul li a{
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.bigNav2 ul li a{
   color: #f5f5f5;
   text-decoration: none;
 }
@@ -551,5 +618,264 @@ h2{
 @media screen and (min-width:1200px){
   .Info{
     padding: 3% 15% 1%;
+  }
+}
+
+.mainAbout, .contactUs{
+  padding: 3% 5%;
+}
+
+.mainAbout h2, .contactUs h2{
+  font-size: 1.3rem;
+}
+
+.mainAbout .bar{
+  width: 80px;
+}
+
+.mainAbout p{
+  margin-top: 5%;
+  color: #4F2100;
+  line-height: 28px;
+}
+
+@media screen and (min-width:992px){
+  .mainAbout, .contactUs{
+    padding: 3em 10%;
+  }
+
+  .mainAbout h2, .contactUs h2{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .mainAbout p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 38px;
+    margin-top: 2%;
+  }
+
+  .mainAbout .bar{
+    width: 100px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .mainAbout{
+    padding: 1%, 15%;
+    margin: 0 5%;
+  }
+  .mainAbout p{
+    width: 85%;
+  }
+}
+
+.Feedback{
+  background-color: #0F0600;
+  padding: 7% 5%;
+}
+
+.Feedback h2{
+  color: #f2f2f2;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.Feedback-form{
+  margin-top: 3%;
+}
+
+.Feedback-form-Inputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.Feedback-form-Inputs input{
+  padding: 3% 5%;
+  width: 100%;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+
+.Feedback-form-Inputs input, .Feedback-form textarea{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+
+.Feedback-form textarea{
+  width: 100%;
+  height: 150px;
+  padding: 3%;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+
+.form-button{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.Feedback-form button{
+  padding: 3% 4%;
+  color: #f2f2f2;
+  background-color: #E86100;
+  border: 1px solid #E86100;
+  border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  font-size: 1rem;
+}
+
+@media screen and (min-width:992px){
+  .Feedback{
+    padding: 5% 10%;
+  }
+  
+  .Feedback-form-Info{
+    width: 70%;
+    display: inline-block;
+  }
+  .Feedback-form{
+    display: flex;
+  }
+
+  .Feedback h2{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  .form-button{
+    display: inline-block;
+    margin-left: 10%;
+    width: 20%;
+    position: relative;
+    top: 195px;
+  }
+
+  .Feedback-form button{
+    padding: 5%;
+  }
+
+  .Feedback .bar, .contactUs .bar{
+    width: 200px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .Feedback{
+    padding: 5% 15%;
+  }
+  .form-button{
+    top: 200px
+  }
+}
+
+.number_and_email{
+  padding: 5% 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number_and_email p{
+  color: #4F2100;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.number_and_email p a{
+  text-decoration: none;
+  color: #4F2100;
+}
+
+.contact-icons{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-icons div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.contact-icons div i{
+  background-color: #cec9c9;
+  padding: 2% 2% 1%;
+  color: #E86100;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10%;
+}
+
+.contact-icons div p{
+  font-weight: 500;
+  color: #4F2100;
+}
+
+@media screen and (min-width:992px){
+  .contact-Info{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .number_and_email{
+    display: block;
+  }
+
+  .number_and_email p{
+    font-size: 1.3rem;
+  }
+
+  .contact-icons{
+    padding: 5% 0;
+    margin-left: 20%;
+  }
+
+  .contact-icons div{
+  margin-bottom: 10%;
+  }
+
+  .contact-icons div:last-child{
+    margin-bottom: 0%;
+  }
+
+  .contact-icons div i{
+    padding: 5%;
+    display: flex;
+    font-size: 1.7rem;
+    margin-right: 20%;
+  }
+
+  .contact-icons div p{
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .contactUs{
+    padding: 3% 15% 1%;
+  }
+  .number_and_email p{
+    font-size: 1.5rem;
   }
 }
