@@ -920,9 +920,94 @@ h2{
   }
 
   .quest{
-    /* padding: 1% 5%; */
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 3%;
   }
+}
+
+.resturant-section{
+  padding: 5% 5% 7%;
+}
+
+@media screen and (min-width:992px){
+  .resturant-section{
+    padding: 3% 10% 7%;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .resturant-section{
+    padding: 3% 15% 5%;
+  }
+}
+
+.vendor-info h3{
+  padding: 1rem 0%;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #4F2100;
+}
+
+.vendor-places{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media screen and (max-width:992px){
+  .vendor-place:nth-child(5), .vendor-place:nth-child(6){
+    display: none;
+  }
+
+  .vendor-place:nth-child(4) h4, .vendor-place:nth-child(4) p{
+    display: none;
+  }
+
+  .vendor-place:nth-child(4)::before{
+    content: "See More";
+    text-align: center;
+    font-weight: 500;
+  } 
+}
+
+.vendor-place{
+  border: 1px solid #4F2100;
+  padding: 3%;
+  border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  color: #4F2100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vendor-place h4{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.vendor-place p{
+  font-size: 0.8em;
+  margin-top: 10%;
+  font-weight: 500;
+}
+
+@media screen and (min-width:992px){
+  .vendor-places{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .vendor-place:nth-child(6) h4, .vendor-place:nth-child(6) p{
+    display: none;
+  }
+
+  .vendor-place:nth-child(6)::before{
+    content: "See More";
+    text-align: center;
+    font-weight: 500;
+  } 
 }

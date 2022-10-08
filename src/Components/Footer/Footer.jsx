@@ -4,7 +4,7 @@ import "./Footer.css"
 
 function Footer() {
     return (  
-        <div className="Footer">
+        <footer className="Footer">
             <h2>Food Ways</h2>
             <div className="footer-items">
                 {FooterInfo.map(item=>{
@@ -26,7 +26,7 @@ function Footer() {
                 <div><FaYoutube /></div>
                 <div><FaInstagram /></div>
             </div>
-        </div>
+        </footer>
     );
 }
 

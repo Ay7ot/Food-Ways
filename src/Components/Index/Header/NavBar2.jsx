@@ -37,7 +37,6 @@ function Navbar2({navToggle, toggleNav}) {
                         <ul>
                             <li><Link to="/" onClick={()=>toggleNav()}>Home</Link></li>
                             <li><Link to="/vendor" onClick={()=>toggleNav()}>Vendor</Link></li>
-                            <li><Link to="/location" onClick={()=>toggleNav()}>Location</Link></li>
                             <li><Link to="/about" onClick={()=>toggleNav()}>About</Link></li>
                             <li><Link to="/faq" onClick={()=>toggleNav()}>FAQ</Link></li>
                         </ul>
@@ -47,7 +46,7 @@ function Navbar2({navToggle, toggleNav}) {
                         </div> 
                     </div> 
                     : 
-                    <div></div>
+                    <></>
                 }
                 <nav className="smallNav2">
                     <i onClick={()=>toggleNav()}><FaBars /></i>
