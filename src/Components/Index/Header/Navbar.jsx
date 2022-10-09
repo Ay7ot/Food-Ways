@@ -60,7 +60,7 @@ function Navbar({navToggle, toggleNav}) {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/vendor">Vendor</Link></li>
-                    <li><Link to="/location">Location</Link></li>
+                    <li><Link to="/">Location</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/faq">FAQ</Link></li>
                 </ul>

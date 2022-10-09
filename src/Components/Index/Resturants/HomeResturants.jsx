@@ -2,6 +2,8 @@ import { resturantSlider } from "./resturantSlider";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css"
 
 function HomeResturants() {
 

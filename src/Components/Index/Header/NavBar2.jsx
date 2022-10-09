@@ -63,7 +63,7 @@ function Navbar2({navToggle, toggleNav}) {
                 </div>
                 <ul>
                     <li><Link to="/vendor">Vendor</Link></li>
-                    <li><Link to="/location">Location</Link></li>
+                    <li><Link to="/">Location</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/faq">FAQ</Link></li>
                 </ul>
