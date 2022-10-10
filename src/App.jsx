@@ -5,6 +5,7 @@ import Home from './Components/Index/Home'
 import About from './Components/About/About'
 import FAQ from './Components/FAQ/FAQ'
 import Vendor from './Components/Vendor/Vendor'
+import SignUp from './Components/SignUp/SignUp'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/about' element={<About navToggle={navToggle} toggleNav={toggleNav}/>}/>
         <Route path='/faq' element={<FAQ navToggle={navToggle} toggleNav={toggleNav}/>}/>
         <Route path='/vendor' element={<Vendor navToggle={navToggle} toggleNav={toggleNav}/>}/>
+        <Route path='/signup' element={<SignUp navToggle={navToggle} toggleNav={toggleNav}/>}/>
       </Routes>
     </>
   )

@@ -42,7 +42,7 @@ function Navbar({navToggle, toggleNav}) {
                         </ul>
                         <div>
                             <button className="login-toggled">LOGIN</button>
-                            <button className="signup-toggled"><a href="#">SIGN UP</a></button>
+                            <button className="signup-toggled" onClick={()=>toggleNav()}><Link to="/signup" style={{textDecoration: "none", color: "#f2f2f2"}}>SIGN UP</Link></button>
                         </div> 
                     </div> 
                     : 
@@ -50,7 +50,7 @@ function Navbar({navToggle, toggleNav}) {
                 }
                 <nav className="smallNav">
                     <i onClick={()=>toggleNav()}><FaBars /></i>
-                    <button>Get Started</button>
+                    <button><Link to="/signup" style={{textDecoration: "none", color: "#f2f2f2"}}>Get Started</Link></button>
                 </nav>
             </>
         );
