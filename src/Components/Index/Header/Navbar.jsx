@@ -66,7 +66,7 @@ function Navbar({navToggle, toggleNav}) {
                 </ul>
                 <div>
                     <button className="login">LOGIN</button>
-                    <button className="signup"><a href="#">SIGN UP</a></button>
+                    <button className="signup"><Link to="/signup" style={{textDecoration: "none", color: "#f2f2f2"}}>SIGN UP</Link></button>
                 </div>
             </nav>
         )
